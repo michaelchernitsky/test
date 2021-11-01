@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-01T16:36:44.080Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="YsNvOe1YsSSXKBEXnc3A" version="15.6.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-11-01T16:52:22.735Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="KnkxEHcJL9r7qM7VxBGM" version="15.6.3" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -149,6 +149,46 @@
       <root>
         <mxCell id="baLXA66Gwawd4mO3uqke-0" />
         <mxCell id="baLXA66Gwawd4mO3uqke-1" parent="baLXA66Gwawd4mO3uqke-0" />
+        <mxCell id="VaIL7fWoaXHpg3i_KeYn-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="baLXA66Gwawd4mO3uqke-1" source="N0ot5xJIXqnKpVlIdId7-0" target="VaIL7fWoaXHpg3i_KeYn-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N0ot5xJIXqnKpVlIdId7-0" value="&lt;span&gt;Get iACH info from cache/db (3)&lt;br&gt;&lt;b&gt;Read Through&lt;/b&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="baLXA66Gwawd4mO3uqke-1">
+          <mxGeometry x="100" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VaIL7fWoaXHpg3i_KeYn-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="baLXA66Gwawd4mO3uqke-1" source="VaIL7fWoaXHpg3i_KeYn-0" target="VaIL7fWoaXHpg3i_KeYn-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VaIL7fWoaXHpg3i_KeYn-0" value="Get From Redis" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="baLXA66Gwawd4mO3uqke-1">
+          <mxGeometry x="100" y="150" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VaIL7fWoaXHpg3i_KeYn-4" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="baLXA66Gwawd4mO3uqke-1" source="VaIL7fWoaXHpg3i_KeYn-1">
+          <mxGeometry x="-0.5556" y="20" relative="1" as="geometry">
+            <mxPoint x="300" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="290" />
+              <mxPoint x="240" y="290" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VaIL7fWoaXHpg3i_KeYn-5" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="baLXA66Gwawd4mO3uqke-1" source="VaIL7fWoaXHpg3i_KeYn-1" target="VaIL7fWoaXHpg3i_KeYn-6">
+          <mxGeometry x="-0.6667" y="30" relative="1" as="geometry">
+            <mxPoint x="160" y="400" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VaIL7fWoaXHpg3i_KeYn-1" value="&lt;div style=&quot;text-align: justify&quot;&gt;cache hit&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="baLXA66Gwawd4mO3uqke-1">
+          <mxGeometry x="110" y="240" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VaIL7fWoaXHpg3i_KeYn-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="baLXA66Gwawd4mO3uqke-1" source="VaIL7fWoaXHpg3i_KeYn-6" target="VaIL7fWoaXHpg3i_KeYn-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VaIL7fWoaXHpg3i_KeYn-6" value="Get From DB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="baLXA66Gwawd4mO3uqke-1">
+          <mxGeometry x="100" y="380" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VaIL7fWoaXHpg3i_KeYn-8" value="Write to cache" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="baLXA66Gwawd4mO3uqke-1">
+          <mxGeometry x="100" y="450" width="120" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
